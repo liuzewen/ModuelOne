@@ -1,10 +1,14 @@
 PODS:
   - BeeHive (1.0.0)
+  - ModuelOne (0.0.2):
+    - BeeHive
 
 DEPENDENCIES:
   - BeeHive (= 1.0.0)
+  - ModuelOne (= 0.0.2)
 
 SPEC CHECKSUMS:
   BeeHive: dbb793e909749ea3a30e205a882f1229bdc13190
+  ModuelOne: c0e9a574b65fc32d75ff53dd2ef15524ab6500b5
 
 COCOAPODS: 0.39.0
