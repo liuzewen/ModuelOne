@@ -3,19 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>moduleClasses</key>
-	<array>
-		<dict>
-			<key>moduleClass</key>
-			<string>HomeModule</string>
-			<key>moduleLevel</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>moduleClass</key>
-			<string>TMTradeAdapter</string>
-			<key>moduleLevel</key>
-			<integer>1</integer>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>

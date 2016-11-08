@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ModuelOne"
-  s.version          = "0.0.4"
+  s.version          = "0.0.5"
   s.summary          = "ModuelOne is used on iOS."
   s.description      = <<-DESC
                        It is a marquee view used on iOS, which implement by Objective-C.
