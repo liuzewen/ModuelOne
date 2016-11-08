@@ -16,10 +16,11 @@
 @synthesize buttonName=_buttonName;
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     // Do any additional setup after loading the view.
     UIButton *btn =[[UIButton alloc] initWithFrame:CGRectMake(100, 200, 200, 200)];
     btn.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin;
-    btn.backgroundColor=[UIColor greenColor];
+    btn.backgroundColor=[UIColor redColor];
     [btn setTitle:self.buttonName forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
 }
