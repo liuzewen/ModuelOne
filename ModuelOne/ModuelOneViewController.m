@@ -8,6 +8,7 @@
 
 #import "ModuelOneViewController.h"
 #import "ModuelOneServiceProtocol.h"
+#import "BeeHive.h"
 @interface ModuelOneViewController ()<ModuelOneServiceProtocol>
 
 @end
@@ -23,9 +24,16 @@
     btn.backgroundColor=[UIColor redColor];
     [btn setTitle:self.buttonName forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
 - (void)click:(UIButton *)btn{
+    
+    id<ModuelOneServiceProtocol> sendVc = [[BeeHive shareInstance] createService:@protocol(ModuelOneServiceProtocol)];
+    if ([sendVc isKindOfClass:[UIViewController class]]) {
+        sendVc.buttonName=@"fromSelf";
+        [self.navigationController pushViewController:(UIViewController *)sendVc animated:YES];
+    }
     NSLog(@"ModueOne is touched");
 }
 - (void)didReceiveMemoryWarning {
